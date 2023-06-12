@@ -24,4 +24,7 @@
     
 (6) 其实使用起来和Vuex非常相似，都是通过在想使用redux的组件中，通过store.dispatch() 来联系redux中的store等；
 其中传入的参数是：{ type:'decrement', data: value * 1 } 等
+
+(7) store文件中，一般不用来直接存取数据，store文件中，一般只通过legacy_createStore as createStore来与reducer打交道
+像处理初始值，或者书写逻辑的内容，都是放在reducer.js文件中；一般是放在count_reducer.js中
 ```
