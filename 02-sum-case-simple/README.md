@@ -21,4 +21,7 @@
 
 (5).在index.js中监测store中状态的改变，一旦发生改变重新渲染<App/>
     备注：redux只负责管理状态，至于状态的改变驱动着页面的展示，要靠我们自己写。
+    
+(6) 其实使用起来和Vuex非常相似，都是通过在想使用redux的组件中，通过store.dispatch() 来联系redux中的store等；
+其中传入的参数是：{ type:'decrement', data: value * 1 } 等
 ```
